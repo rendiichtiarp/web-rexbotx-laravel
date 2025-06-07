@@ -1,5 +1,8 @@
 {
-    "$schema": "https://json.schemastore.org/package.json",
+    "name": "web-rexbotx-laravel",
+    "version": "1.0.0",
+    "description": "Web RexbotX with Laravel",
+    "author": "Rendi Ichtiar Prasetyo",
     "private": true,
     "type": "module",
     "scripts": {

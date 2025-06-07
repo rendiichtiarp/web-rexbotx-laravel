@@ -1,95 +1,95 @@
-<!-- Footer Section -->
+<!-- Footer -->
 <footer class="bg-base-200">
     <div class="container mx-auto px-4 py-12 md:py-16">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
-            <!-- Brand Section -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
+            <!-- Brand -->
             <div class="space-y-4">
                 <div class="flex items-center gap-2">
                     <img src="/logo-color.webp" alt="RexbotX Logo" class="w-8 h-8">
-                    <span class="text-xl font-bold">RexbotX</span>
+                    <span class="text-lg font-bold">RexbotX</span>
                 </div>
-                <p class="text-sm text-base-content/70">
-                    Bot WhatsApp dengan berbagai fitur canggih untuk memudahkan aktivitas Anda.
+                <p class="text-sm md:text-[15px] text-base-content/70">
+                    Bot WhatsApp multifungsi dengan berbagai fitur canggih untuk memudahkan aktivitas Anda di WhatsApp.
                 </p>
+                <div class="flex items-center gap-4">
+                    <a href="https://whatsapp.com/channel/0029Vb1aqIYCMY0EmiUODK00" target="_blank" class="hover:text-primary transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com/rexbotz_" target="_blank" class="hover:text-primary transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/rexbotx" target="_blank" class="hover:text-primary transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
 
-            <!-- Produk Links -->
+            <!-- Quick Links -->
             <div>
-                <h3 class="text-base font-semibold mb-4">Produk</h3>
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
                 <ul class="space-y-2">
                     <li>
-                        <a href="#fitur" class="text-sm text-base-content/70 hover:text-primary transition-colors">
-                            Fitur
-                        </a>
+                        <a href="/" class="text-sm md:text-[15px] text-base-content/70 hover:text-primary transition-colors">Beranda</a>
                     </li>
                     <li>
-                        <a href="#harga" class="text-sm text-base-content/70 hover:text-primary transition-colors">
-                            Harga
-                        </a>
+                        <a href="/command" class="text-sm md:text-[15px] text-base-content/70 hover:text-primary transition-colors">Perintah</a>
                     </li>
                     <li>
-                        <a href="#faq" class="text-sm text-base-content/70 hover:text-primary transition-colors">
-                            FAQ
-                        </a>
+                        <a href="/rating" class="text-sm md:text-[15px] text-base-content/70 hover:text-primary transition-colors">Rating</a>
+                    </li>
+                    <li>
+                        <a href="https://whatsapp.com/channel/0029Vb1aqIYCMY0EmiUODK00" target="_blank" class="text-sm md:text-[15px] text-base-content/70 hover:text-primary transition-colors">Saluran</a>
                     </li>
                 </ul>
             </div>
 
-            <!-- Sosial Media Links -->
+            <!-- Features -->
             <div>
-                <h3 class="text-base font-semibold mb-4">Sosial Media</h3>
+                <h3 class="text-lg font-semibold mb-4">Fitur</h3>
                 <ul class="space-y-2">
                     <li>
-                        <a href="https://whatsapp.com/channel/0029Vb1aqIYCMY0EmiUODK00" target="_blank" class="text-sm text-base-content/70 hover:text-primary transition-colors flex items-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12.043 6.925a4.968 4.968 0 0 0-4.962 4.962c0 .913.247 1.803.714 2.583L6.31 17.7l3.339-1.372a4.955 4.955 0 0 0 2.394.61 4.968 4.968 0 0 0 4.962-4.962 4.968 4.968 0 0 0-4.962-4.962zm0 9.924a4.955 4.955 0 0 1-2.483-.666l-.177-.107-1.839.756.77-1.832-.114-.181a4.944 4.944 0 0 1-.658-2.482 4.962 4.962 0 0 1 9.924 0 4.97 4.97 0 0 1-4.962 4.962zm2.955-3.605c-.158-.086-1.006-.511-1.172-.568-.158-.086-.273-.122-.395.086-.122.207-.481.568-.588.683-.108.122-.209.129-.367.043-.158-.086-.668-.254-1.273-.798-.47-.432-.788-.968-.881-1.132-.093-.158-.007-.244.086-.323.086-.072.187-.187.273-.28.086-.093.122-.158.18-.266.058-.107.029-.201-.015-.28-.043-.072-.395-.968-.541-1.327-.144-.351-.294-.302-.395-.308-.108-.007-.223-.007-.338-.007s-.309.043-.471.251c-.158.201-.618.618-.618 1.492s.632 1.734.719 1.848c.086.122 1.209 1.919 2.99 2.609 1.782.69 1.782.46 2.104.431.323-.029 1.043-.432 1.19-.856.144-.424.144-.784.101-.856-.036-.072-.151-.115-.309-.201z"/>
-                            </svg>
-                            Channel WhatsApp
-                        </a>
+                        <a href="/command#ai" class="text-sm md:text-[15px] text-base-content/70 hover:text-primary transition-colors">AI Chat & Image</a>
                     </li>
                     <li>
-                        <a href="https://wa.me/6281284900651" target="_blank" class="text-sm text-base-content/70 hover:text-primary transition-colors flex items-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12.043 6.925a4.968 4.968 0 0 0-4.962 4.962c0 .913.247 1.803.714 2.583L6.31 17.7l3.339-1.372a4.955 4.955 0 0 0 2.394.61 4.968 4.968 0 0 0 4.962-4.962 4.968 4.968 0 0 0-4.962-4.962zm0 9.924a4.955 4.955 0 0 1-2.483-.666l-.177-.107-1.839.756.77-1.832-.114-.181a4.944 4.944 0 0 1-.658-2.482 4.962 4.962 0 0 1 9.924 0 4.97 4.97 0 0 1-4.962 4.962zm2.955-3.605c-.158-.086-1.006-.511-1.172-.568-.158-.086-.273-.122-.395.086-.122.207-.481.568-.588.683-.108.122-.209.129-.367.043-.158-.086-.668-.254-1.273-.798-.47-.432-.788-.968-.881-1.132-.093-.158-.007-.244.086-.323.086-.072.187-.187.273-.28.086-.093.122-.158.18-.266.058-.107.029-.201-.015-.28-.043-.072-.395-.968-.541-1.327-.144-.351-.294-.302-.395-.308-.108-.007-.223-.007-.338-.007s-.309.043-.471.251c-.158.201-.618.618-.618 1.492s.632 1.734.719 1.848c.086.122 1.209 1.919 2.99 2.609 1.782.69 1.782.46 2.104.431.323-.029 1.043-.432 1.19-.856.144-.424.144-.784.101-.856-.036-.072-.151-.115-.309-.201z"/>
-                            </svg>
-                            Hubungi Admin
-                        </a>
+                        <a href="/command#downloader" class="text-sm md:text-[15px] text-base-content/70 hover:text-primary transition-colors">Downloader</a>
+                    </li>
+                    <li>
+                        <a href="/command#game" class="text-sm md:text-[15px] text-base-content/70 hover:text-primary transition-colors">Game & Fun</a>
+                    </li>
+                    <li>
+                        <a href="/command#tools" class="text-sm md:text-[15px] text-base-content/70 hover:text-primary transition-colors">Tools & Search</a>
                     </li>
                 </ul>
             </div>
 
-            <!-- Kebijakan Links -->
+            <!-- Contact -->
             <div>
-                <h3 class="text-base font-semibold mb-4">Kebijakan</h3>
+                <h3 class="text-lg font-semibold mb-4">Kontak</h3>
                 <ul class="space-y-2">
                     <li>
-                        <a href="/privasi" class="text-sm text-base-content/70 hover:text-primary transition-colors">
-                            Privasi
-                        </a>
+                        <a href="https://wa.me/6281585030507?text=.menu" target="_blank" class="text-sm md:text-[15px] text-base-content/70 hover:text-primary transition-colors">Bot: +62 815-8503-0507</a>
                     </li>
                     <li>
-                        <a href="/ketentuan" class="text-sm text-base-content/70 hover:text-primary transition-colors">
-                            Ketentuan
-                        </a>
+                        <a href="https://wa.me/6281284900651" target="_blank" class="text-sm md:text-[15px] text-base-content/70 hover:text-primary transition-colors">Admin: +62 812-8490-0651</a>
+                    </li>
+                    <li>
+                        <a href="mailto:rexbotx@gmail.com" class="text-sm md:text-[15px] text-base-content/70 hover:text-primary transition-colors">Email: rexbotx@gmail.com</a>
                     </li>
                 </ul>
             </div>
         </div>
 
         <!-- Copyright -->
-        <div class="border-t border-base-300 mt-12 pt-8">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-sm text-base-content/70">
-                    © 2025 RexbotX. All rights reserved.
-                </p>
-                <div class="flex items-center gap-4">
-                    <button class="btn btn-ghost btn-sm" onclick="document.documentElement.setAttribute('data-theme', document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark')">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-                        </svg>
-                        <span class="text-sm">Tema</span>
-                    </button>
-                </div>
+        <div class="mt-12 pt-8 border-t border-base-300">
+            <div class="text-center text-sm text-base-content/70">
+                <p>&copy; {{ date('Y') }} RexbotX. All rights reserved.</p>
+                <p class="mt-1">Made with ❤️ by <a href="https://github.com/rexbotx" target="_blank" class="text-primary hover:underline">Rendichtiar</a></p>
             </div>
         </div>
     </div>
