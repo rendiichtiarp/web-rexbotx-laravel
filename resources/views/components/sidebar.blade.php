@@ -16,6 +16,23 @@
             </label>
         </div>
         
+        @auth
+            <!-- User Info (Mobile) -->
+            <div class="lg:hidden p-4 border-b border-base-200">
+                <div class="flex items-center gap-3">
+                    <div class="avatar placeholder">
+                        <div class="bg-neutral text-neutral-content rounded-full w-10">
+                            <span class="text-lg">{{ substr(Auth::user()->name, 0, 2) }}</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-medium">{{ Auth::user()->name }}</p>
+                        <p class="text-sm text-base-content/70">{{ Auth::user()->username }}</p>
+                    </div>
+                </div>
+            </div>
+        @endauth
+        
         <!-- Navigation Links -->
         <nav class="p-6 space-y-2">
             <a href="/" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-base-200 transition-colors">
@@ -38,6 +55,16 @@
                 </svg>
                 <span class="text-sm">Rating</span>
             </a>
+            @auth
+                <a href="/dashboard" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-base-200 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
+                        <line x1="3" y1="9" x2="21" y2="9"></line>
+                        <line x1="9" y1="21" x2="9" y2="9"></line>
+                    </svg>
+                    <span class="text-sm">Dashboard</span>
+                </a>
+            @endauth
             <a href="https://whatsapp.com/channel/0029Vb1aqIYCMY0EmiUODK00" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-base-200 transition-colors" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
@@ -59,24 +86,50 @@
         <!-- Auth Buttons -->
         <div class="absolute bottom-0 w-full p-6 border-t border-base-200">
             <div class="flex flex-col gap-2">
-                <a href="/login" class="btn btn-ghost btn-sm justify-start gap-2 px-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
-                        <polyline points="10 17 15 12 10 7"></polyline>
-                        <line x1="15" y1="12" x2="3" y2="12"></line>
-                    </svg>
-                    <span class="text-sm">Masuk</span>
-                </a>
-                <a href="/register" class="btn btn-primary btn-sm justify-start gap-2 px-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="9" cy="7" r="4"></circle>
-                        <line x1="20" y1="8" x2="20" y2="14"></line>
-                        <line x1="23" y1="11" x2="17" y2="11"></line>
-                    </svg>
-                    <span class="text-sm">Daftar</span>
-                </a>
+                @auth
+                    <!-- User Info (Desktop) -->
+                    <div class="hidden lg:flex items-center gap-3 px-4 py-2.5 mb-2">
+                        <div class="avatar placeholder">
+                            <div class="bg-neutral text-neutral-content rounded-full w-8">
+                                <span class="text-xs">{{ substr(Auth::user()->name, 0, 2) }}</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-sm font-medium">{{ Auth::user()->name }}</p>
+                            <p class="text-xs text-base-content/70">{{ Auth::user()->username }}</p>
+                        </div>
+                    </div>
+                    <form action="{{ route('logout') }}" method="POST">
+                        @csrf
+                        <button type="submit" class="btn btn-error btn-sm justify-start gap-2 px-4 w-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                <polyline points="16 17 21 12 16 7"></polyline>
+                                <line x1="21" y1="12" x2="9" y2="12"></line>
+                            </svg>
+                            <span class="text-sm">Keluar</span>
+                        </button>
+                    </form>
+                @else
+                    <a href="/signin" class="btn btn-ghost btn-sm justify-start gap-2 px-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                            <polyline points="10 17 15 12 10 7"></polyline>
+                            <line x1="15" y1="12" x2="3" y2="12"></line>
+                        </svg>
+                        <span class="text-sm">Masuk</span>
+                    </a>
+                    <a href="/signup" class="btn btn-primary btn-sm justify-start gap-2 px-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <line x1="20" y1="8" x2="20" y2="14"></line>
+                            <line x1="23" y1="11" x2="17" y2="11"></line>
+                        </svg>
+                        <span class="text-sm">Daftar</span>
+                    </a>
+                @endauth
             </div>
         </div>
     </div>
-</div> 
+</div>

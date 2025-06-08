@@ -93,7 +93,9 @@
             </main>
 
             <!-- Include Footer -->
-            @include('components.footer')
+            @if(!View::hasSection('hide_footer'))
+                @include('components.footer')
+            @endif
 
             <!-- Scroll to Top Button -->
             <button id="scrollToTop" class="scroll-to-top btn btn-circle btn-primary fixed bottom-4 right-4 z-50">

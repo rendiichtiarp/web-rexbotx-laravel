@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Bot WhatsApp Terbaik')
+@section('title', 'Bot WhatsApp Multifungsi')
 
 @section('content')
     <!-- Hero Section -->

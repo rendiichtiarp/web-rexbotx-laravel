@@ -19,6 +19,9 @@
                 <a href="/" class="text-base hover:text-primary transition-colors font-medium">Beranda</a>
                 <a href="/command" class="text-base hover:text-primary transition-colors font-medium">Perintah</a>
                 <a href="/rating" class="text-base hover:text-primary transition-colors font-medium">Rating</a>
+                @auth
+                    <a href="/dashboard" class="text-base hover:text-primary transition-colors font-medium">Dashboard</a>
+                @endauth
                 <a href="https://whatsapp.com/channel/0029Vb1aqIYCMY0EmiUODK00" class="text-base hover:text-primary transition-colors font-medium" target="_blank">Saluran</a>
                 <a href="https://wa.me/6281284900651" class="text-base hover:text-primary transition-colors font-medium" target="_blank">Hubungi Admin</a>
             </nav>
@@ -31,12 +34,32 @@
                     <svg class="swap-off w-5 h-5 fill-base-content/70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
                 </label>
                 <div class="hidden lg:flex items-center gap-2">
-                    <a href="/login" class="btn btn-ghost btn-sm text-base font-medium px-4">Masuk</a>
-                    <a href="/register" class="btn btn-primary btn-sm text-base font-medium px-4">Daftar</a>
+                    @auth
+                        <div class="dropdown dropdown-end">
+                            <label tabindex="0" class="btn btn-ghost btn-sm gap-2">
+                                <span class="font-medium">{{ Auth::user()->name }}</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m6 9 6 6 6-6"/>
+                                </svg>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a href="/dashboard" class="text-sm">Dashboard</a></li>
+                                <li>
+                                    <form action="{{ route('logout') }}" method="POST" class="w-full">
+                                        @csrf
+                                        <button type="submit" class="text-sm w-full text-left text-error">Keluar</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    @else
+                        <a href="/signin" class="btn btn-ghost btn-sm text-base font-medium px-4">Masuk</a>
+                        <a href="/signup" class="btn btn-primary btn-sm text-base font-medium px-4">Daftar</a>
+                    @endauth
                 </div>
             </div>
         </div>
     </div>
-</div>
+</div> 
 <!-- Spacer untuk navbar -->
 <div class="h-16"></div> 
